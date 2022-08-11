@@ -1,3 +1,22 @@
+
+h2{
+  color:red;
+  border:2px solid red;
+  text-align: center;
+  margin:50px;
+  padding:30px;
+}
+
+h2:hover{
+  color:black;
+}
+p{
+  font-size:30px;
+}
+
+
+
+
 .header {
   background-color: rgb(36, 206, 206);
   margin-top: -8px;
@@ -13,7 +32,7 @@
   flex: 1 1 auto;
 }
 .text {
-  font-size: 20px;
+  font-size: 30px;
   font-family: sans-serif;
   font-weight: 600;
 }
@@ -21,14 +40,47 @@
   margin-left: 20px;
 }
 .menu-icon {
-  background-color:rgb(240, 233, 233);
+  background-color:rgb(243, 237, 237);
   color: black;
   border: none;
-  font-size: 40px;
+  font-size: 20px;
   cursor: pointer;
 }
+.dropdown{
+  position:relative;
+  display:inline-block;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+background-color:#f9f9f9;
+min-width:160px;
+box-shadow:0px8px 16px 0px rgba(0,0,0,0.2);
+z-index:1;
+
+}
+
+.dropdown-content a{
+  color:black;
+  padding:10px 5px;
+  text-decoration:none;
+  display:block;
+}
+
+.dropdown-content a:hover{background-color:#f1f1f1}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+.dropdown:hover  .menu-icon{
+  background-color:#13d0f1;
+}
+
+
 .favorite-icon{
-  background-color:rgb(238, 230, 230);
+  background-color:rgb(243, 237, 237);
   color: black;
   border: none;
   font-size: 40px;
@@ -42,8 +94,9 @@
   font-size: 40px;
   cursor: pointer;
 }
+
 .product-link{
-  background-color:rgb(240, 232, 232);
+  background-color:rgb(243, 237, 237);
   border:3px;
   font-size: larger;
   margin-right: 20px;

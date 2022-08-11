@@ -8,18 +8,34 @@
   <body>
   <nav class="header">
     <mat-toolbar class="bar">
+
+
+      <div class="dropdown">
       <button
         mat-icon-button
         class="menu-icon"
         aria-label="Example icon-button with menu icon"
       >
         <mat-icon>menu</mat-icon>
+<div class="dropdown-content">
+<a href="#">Home</a>
+<a href="#">Contact</a>
+<a href="#">About Us</a>
+</div>
+
+
       </button>
   
+    </div>
+
+
+
+
+
       <div class="box"><span class="text">SUPER STORE</span></div>
       <span class="sample"></span>
         <button class="product-link"routerLink="/product">
-          PRODUCT
+          PRODUCTS
           </button>
       <button 
         mat-icon-button
@@ -38,6 +54,8 @@
     </mat-toolbar>
   </nav>
   <router-outlet></router-outlet>
-  <h1>PRODUCTS AT LOWEST PRICE....</h1> 
+  <h1>PRODUCTS AT THE LOWEST PRICE....</h1> 
+  <h2>"Early Bird Catches the Worm"</h2>
+  <p>Look at the Products...</p>
   </body>
   
