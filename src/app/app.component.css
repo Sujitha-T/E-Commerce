@@ -1,0 +1,53 @@
+.header {
+  background-color: rgb(36, 206, 206);
+  margin-top: -8px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 20px;
+  display: flex;
+}
+.bar{
+  background-color: rgb(243, 239, 239);
+}
+.sample {
+  flex: 1 1 auto;
+}
+.text {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.box {
+  margin-left: 20px;
+}
+.menu-icon {
+  background-color:rgb(240, 233, 233);
+  color: black;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+.favorite-icon{
+  background-color:rgb(238, 230, 230);
+  color: black;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+
+}
+.share-icon{
+  background-color:rgb(243, 237, 237);
+  color: black;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+.product-link{
+  background-color:rgb(240, 232, 232);
+  border:3px;
+  font-size: larger;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 13px;
+  
+}

@@ -1,0 +1,11 @@
+.card-img {
+  object-fit: cover;
+  width: 90%;
+  height:100px;
+}
+.content{
+  background-color: rgb(123, 187, 230);
+}
+h2{
+  color:green;
+}
