@@ -6,7 +6,7 @@
   <mat-grid-tile *ngFor="let product of products" class="cards">
     <mat-card class="example-card">
       <mat-card-header>
-        <mat-card-title>{{product.title}}</mat-card-title>
+        <mat-card-title><b>{{product.title}}</b></mat-card-title>
         <mat-card-subtitle>{{ product.category }}</mat-card-subtitle>
       </mat-card-header>
       <img class= "images" mat-card-img src="{{product.images[0]}}" />
