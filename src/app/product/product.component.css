@@ -16,10 +16,10 @@ mat-grid-list {
   height: fit-content;
   background-color: rgb(196, 243, 255);
 }
-mat-grid-title {
+mat-grid-tile {
   font-family:Arial;
   overflow: visible;
-  font-size:large;
+  box-shadow: 2px 2px 20px 0 #080808 ;
 }
 
 mat-card {

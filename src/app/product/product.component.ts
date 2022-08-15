@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../service/Dataproduct.service';
 import { Product } from './product';
+import { ActivatedRoute, Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -8,7 +10,7 @@ import { Product } from './product';
 })
 export class ProductComponent implements OnInit {
   products: Array<Product> = [];
-  constructor(private product: DataService) {}
+  constructor(private product: DataService, private router: Router) {}
 
   ngOnInit(): void {
     this.product.getproducts().subscribe((data: any[]) => {
@@ -17,4 +19,14 @@ export class ProductComponent implements OnInit {
       console.log(data);
     });
   }
+
+
+
+  getProductDetails(event: any, product: any): void {
+    console.log(event);
+    this.router.navigate(['/product', product.id]);
+  }
+
+
+
 }

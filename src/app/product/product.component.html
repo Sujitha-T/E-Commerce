@@ -17,8 +17,16 @@
   
       
       <mat-card-actions>
-        <button mat-button>DETAILS</button>
-     
+       <!--<button mat-button  >DETAILS</button>--> 
+       <button
+       class="btn-1"
+       (click)="getProductDetails($event, product)"
+       mat-button
+       mat-raised-button
+       matTooltip="Get details of the product"
+     >
+       DETAILS
+     </button>
       </mat-card-actions>
     </mat-card>
   </mat-grid-tile>
